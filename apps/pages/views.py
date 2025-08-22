@@ -27,3 +27,23 @@ def checkout_view(request):
 
 def contact_view(request):
     return render(request, 'contact.html')
+
+
+def dashboard_view(request):
+    return render(request, 'dashboard.html')
+
+
+def faq_view(request):
+    return render(request, 'faq.html')
+
+
+def login_view(request):
+    return render(request, 'login.html')
+
+
+def product_detail_view(request):
+    return render(request, 'product_detail.html')
+
+
+def wishlist_view(request):
+    return render(request, 'wishlist.html')

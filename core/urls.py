@@ -29,6 +29,11 @@ urlpatterns = [
     path('category/', views.category_view, name='categorys'),
     path('checkout/', views.checkout_view, name='checkouts'),
     path('contact/', views.contact_view, name='contacts'),
+    path('dashboard/', views.dashboard_view, name='dashboards'),
+    path('faq/', views.faq_view, name='faqs'),
+    path('login/', views.login_view, name='logins'),
+    path('product_detail/', views.product_detail_view, name='products'),
+    path('wishlist/', views.cart_view, name='wishlists'),
 ]
 
 if settings.DEBUG:
