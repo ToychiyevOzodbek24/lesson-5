@@ -18,14 +18,17 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
-from apps.pages import views   # 👈 shu joy yetishmayapti
+from apps.pages import views
 
 
 urlpatterns = [
     path('', views.about_view, name='about'),
-    path('blog/<int:id>/', views.blog_detail_view, name='blog_detail'),  # agar ID bo'lsa
-    # yoki
     path('blog-detail/', views.blog_detail_view, name='blog_detail'),  # oddiy sahifa uchun
+    path('blog-list/', views.blog_list_view, name='blog_lists'),
+    path('cart/', views.cart_view, name='carts'),
+    path('category/', views.category_view, name='categorys'),
+    path('checkout/', views.checkout_view, name='checkouts'),
+    path('contact/', views.contact_view, name='contacts'),
 ]
 
 if settings.DEBUG:
